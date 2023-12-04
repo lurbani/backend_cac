@@ -18,7 +18,7 @@ CORS(app)
 
 # Configurar a la app la DB
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://usuario:contraseña@localhost:3306/nombre_de_la_base_de_datos'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://crudg26:{PWD_DB}@crudg26.mysql.pythonanywhere-services.com/crudg26$default'
+app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://crudg26:{PWD_DB}@crudg26.mysql.pythonanywhere-services.com/crudg26$default'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Crear un objeto db, para informar a la app que se trabajará con sqlalchemy
